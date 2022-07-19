@@ -244,3 +244,54 @@
     }
 }
     
+/*Subscription*/
+.subscriptionContainer{
+    background-color: colors.$color1;
+    padding: 25px 0;
+    width: 100%;
+    .subscription{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &__title{
+            color: colors.$color3;
+            font-size: 1.3rem;
+            font-family: var.$tipografia1;
+            width: 35%;
+        }
+        .formSubscription{
+            width: 50%;
+            .form{
+                display: flex;
+                flex-wrap: wrap;
+                &__email{
+                    border: none;
+                    background-color: transparent;
+                    color: colors.$color3;
+                    font-size: 20px;
+                    border-bottom: 2px solid colors.$color3;    
+                    flex-grow: 3;
+                    &::placeholder{
+                        color: colors.$color3;
+                        font-weight: 700;     
+                    }
+                    &:focus{
+                        outline:none
+                    }
+                }     
+                &__submit{
+                    padding: 13px 40px;
+                    border: 1px solid colors.$color3;
+                    background-color: transparent;
+                    color:colors.$color3;
+                    font-weight: 700;
+                    border-radius: 5px;
+                    font-family: var.$tipografia1;
+                    margin-left: 20px;
+                    cursor: pointer;
+                    flex-grow: 1;
+                }
+            }
+        }
+    }
+}

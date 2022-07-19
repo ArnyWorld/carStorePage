@@ -576,6 +576,58 @@ html .goTop {
   line-height: 1.6;
 }
 
+/*Subscription*/
+.subscriptionContainer {
+  background-color: #ff3737;
+  padding: 25px 0;
+  width: 100%;
+}
+.subscriptionContainer .subscription {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.subscriptionContainer .subscription__title {
+  color: #f6f8fc;
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  width: 35%;
+}
+.subscriptionContainer .subscription .formSubscription {
+  width: 50%;
+}
+.subscriptionContainer .subscription .formSubscription .form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.subscriptionContainer .subscription .formSubscription .form__email {
+  border: none;
+  background-color: transparent;
+  color: #f6f8fc;
+  font-size: 20px;
+  border-bottom: 2px solid #f6f8fc;
+  flex-grow: 3;
+}
+.subscriptionContainer .subscription .formSubscription .form__email::placeholder {
+  color: #f6f8fc;
+  font-weight: 700;
+}
+.subscriptionContainer .subscription .formSubscription .form__email:focus {
+  outline: none;
+}
+.subscriptionContainer .subscription .formSubscription .form__submit {
+  padding: 13px 40px;
+  border: 1px solid #f6f8fc;
+  background-color: transparent;
+  color: #f6f8fc;
+  font-weight: 700;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 20px;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
 footer {
   width: 100%;
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../../img/separador.jpg");
