@@ -1,0 +1,119 @@
+@use '../base/globales';
+@use '../base/colores' as colors;
+@use '../base/mixin' as mixin;
+@use '../base/variables' as var;
+footer{
+    width: 100%;
+    @include mixin.background('../../img/separador.jpg');
+    .detailsFooter{
+        padding: 2em 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @include mixin.litle{
+            flex-direction: column; 
+        }  
+
+        .detailsFooter__about{
+            width: 25%;
+
+            @include mixin.medium{
+                width:32%; 
+            }          
+            
+            @include mixin.litle{
+                width: 70%; 
+                margin-bottom: 1.5em;
+            }  
+
+            .title{
+                @include mixin.title(var.$tipografia1,1.2rem, colors.$color3);
+            }
+            .text{
+                @include mixin.text(var.$tipografia2,1rem, colors.$color6);
+                margin-bottom: 1em;
+            }
+
+            .networks{
+                display: flex;
+                justify-content: space-around;                
+                .icon{
+                    font-size: 1.2rem;
+                    color: colors.$color3;
+                    cursor: pointer;
+                    transition: transform .5s ease;
+                    &:hover{
+                        transform: scale(1.4);
+                    }
+                }
+            }
+        }
+        .detailsFooter__menu{
+            width: 25%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            @include mixin.medium{
+                width:32%; 
+            } 
+            
+            
+            @include mixin.litle{
+                width: 85%; 
+                margin-bottom: 1.5em;
+            }
+
+            .navigationList{
+                margin-bottom: 1em;
+                .navigationLink{
+                    @include mixin.text(var.$tipografia2,1.1rem, colors.$color6);
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .detailsFooter__form{
+            width: 25%;
+            @include mixin.medium{
+                width:32%; 
+            }
+            
+            @include mixin.litle{
+                width: 70%; 
+            }               
+            .title{
+                @include mixin.title(var.$tipografia1,1.2rem, colors.$color3);
+            }
+            .form{
+                .input{
+                    @include mixin.inputTransparent(100%,1rem, 1px);
+                    margin-bottom: 1em;
+                }
+                .label{
+                    @include mixin.text(var.$tipografia2,1.2rem, colors.$color6);
+                }
+                .message{
+                    @include mixin.inputTransparent(100%, 1rem, 1px);
+                    padding: 1em;
+                    margin-bottom: 1em;
+                    border: 1px solid colors.$color3; 
+                }
+                .button{
+                    @include mixin.button(colors.$color1, colors.$color3, none);
+                }
+            }
+        }
+    }
+    .copy{
+        background-color: colors.$color5;
+        color: colors.$color3;
+        width: 100%;
+        padding: 1em;
+        text-align: center;
+        font-family: var.$tipografia2;
+    }
+}
