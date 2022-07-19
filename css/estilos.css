@@ -366,6 +366,64 @@ main .parallax .parallaxContent__text {
   line-height: 1.6;
   font-weight: 500;
 }
+main .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+}
+main .accessories {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+main .accessories .accessory {
+  width: 23%;
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+main .accessories .accessory__image {
+  padding: 1em;
+  background-color: #f6f8fc;
+  margin-bottom: 1em;
+}
+main .accessories .accessory__image img {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+main .accessories .accessory__image img:hover {
+  transform: scale(1.1);
+}
+main .accessories .accessory__image i {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 100;
+  position: relative;
+}
+main .accessories .accessory__image i:hover {
+  color: #ff3737;
+}
+main .accessories .accessory__content .name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+main .accessories .accessory__content .price {
+  display: flex;
+  justify-content: space-around;
+}
+main .accessories .accessory__content .price .delete {
+  color: #ff3737;
+  text-decoration: line-through;
+}
+main .accessories .accessory__content .price .success {
+  font-weight: 700;
+}
 
 footer {
   width: 100%;

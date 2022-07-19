@@ -36,4 +36,64 @@ main{
             }
         }
     }
+    .title{
+        @include mixin.title(var.$tipografia1,1.4rem, colors.$color4);
+    }
+
+    .accessories{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 2em;
+        .accessory{
+            width: 23%;
+            overflow: hidden;
+            margin-bottom: 2em;
+            
+            &__image{
+                padding: 1em;
+                background-color: colors.$color3;
+                margin-bottom: 1em;
+                img{
+                    width: 100%;
+                    transition: transform .5s ease;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+                i{
+                    display: flex;
+                    justify-content: flex-end;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                    z-index: 100;
+                    position: relative;
+                 
+                    &:hover{
+                        color:colors.$color1;
+
+                    }
+                }
+            }
+            &__content{
+                .name{
+                    @include mixin.title(var.$tipografia1,1rem, colors.$color4);
+                    text-align: center;
+                }    
+                .price{
+                    display: flex;
+                    justify-content: space-around;
+
+                    .delete{
+                        color: colors.$color1;
+                        text-decoration: line-through;
+                    }
+                    .success{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    
 }
