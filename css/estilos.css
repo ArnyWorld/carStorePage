@@ -424,6 +424,55 @@ main .accessories .accessory__content .price .delete {
 main .accessories .accessory__content .price .success {
   font-weight: 700;
 }
+main .subscribe {
+  background-color: #ff3737;
+  padding: 2em 0;
+}
+main .subscribe .subscribeContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .subscribe .subscribeContent .subscribeContent__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  color: #f6f8fc;
+  margin-bottom: 1.2rem;
+  margin-bottom: 0;
+}
+main .subscribe .subscribeContent .subscribeContent__form {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+main .subscribe .subscribeContent .subscribeContent__form .formText {
+  width: 75%;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  color: #f6f8fc;
+  border-bottom: 3px solid #f6f8fc;
+  padding: 0.6rem;
+}
+main .subscribe .subscribeContent .subscribeContent__form .formText::placeholder {
+  color: #f6f8fc;
+}
+main .subscribe .subscribeContent .subscribeContent__form .formText:focus {
+  outline: none;
+}
+main .subscribe .subscribeContent .subscribeContent__form .formButton {
+  background-color: transparent;
+  color: #f6f8fc;
+  font-size: 1rem;
+  border: 1px solid #f6f8fc;
+  border-radius: 5px;
+  padding: 0.7em 1.7em;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  width: 20%;
+  padding: 0.8em 0;
+}
 
 footer {
   width: 100%;
