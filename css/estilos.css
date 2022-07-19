@@ -423,6 +423,93 @@ html .goTop {
   width: 30%;
 }
 
+/*Parallax*/
+.parallax {
+  background-image: url(../img/contactos-min.jpg);
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  padding: 50px 0;
+}
+.parallax::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+}
+.parallax .contentParallax {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.parallax .contentParallax__left {
+  width: 45%;
+}
+.parallax .contentParallax__image {
+  width: 100%;
+}
+.parallax .contentParallax__small {
+  color: #f6f8fc;
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.parallax .contentParallax__title {
+  color: #f6f8fc;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+.parallax .contentParallax__right {
+  width: 45%;
+  padding: 40px 0;
+}
+.parallax .step {
+  margin-bottom: 25px;
+}
+.parallax .step__:last-child {
+  margin-bottom: 0px;
+}
+.parallax .step__title {
+  display: flex;
+  align-items: center;
+}
+.parallax .step__title span {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff3737;
+  color: #f6f8fc;
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: #f6f8fc;
+  margin-bottom: 1.2rem;
+}
+.parallax .step__title h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: #f6f8fc;
+  margin-bottom: 1.2rem;
+}
+.parallax .step__content p {
+  font-family: "Source Sans Pro", helvetica;
+  font-size: 1rem;
+  color: #f6f8fc;
+  text-align: left;
+  line-height: 1.6;
+}
+
 footer {
   width: 100%;
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../../img/separador.jpg");

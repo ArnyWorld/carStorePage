@@ -109,3 +109,86 @@
         width:30%;
     }
 }
+
+/*Parallax*/
+
+.parallax{
+    background-image:url(../img/contactos-min.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding: 50px 0;
+    &::before{
+        content:'';
+        width: 100%;
+        height: 100%;
+        background-color: colors.$color8;
+        position: absolute;
+        top: 0;
+    }
+    .contentParallax{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        &__left{
+            width: 45%;
+        }
+        &__image{
+            width: 100%;
+        }
+        &__small{
+            color: colors.$color3;
+            font-size: 16px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        &__title{
+            color: colors.$color3;
+            font-size: 24px;
+            font-family: var.$tipografia1;
+            margin-bottom: 30px;
+        }
+        &__right{
+            width: 45%;
+            padding: 40px 0;
+        }
+    }
+    .step{
+        margin-bottom: 25px;
+        &__:last-child{
+            margin-bottom: 0px;
+        }
+        &__title{
+            display: flex;
+            align-items: center;
+            span{
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items:center;    
+                background-color: colors.$color1;
+                color: colors.$color3;
+                font-size: 22px;
+                font-weight: 700;
+                border-radius: 50%;
+                margin-right:20px ;
+                @include mixin.title(var.$tipografia1, 1.1rem, colors.$color3);
+            }
+            h4{
+                @include mixin.title(var.$tipografia1, 1.1rem, colors.$color3);
+            }
+        }
+        &__content{
+            p{
+                @include mixin.text(var.$tipografia2, 1rem, colors.$color3);
+    
+            }
+        }
+    }
+    
+}
+    
