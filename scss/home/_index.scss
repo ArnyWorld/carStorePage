@@ -12,12 +12,22 @@
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        @include mixin.medium{
+            padding: 30px 0;
+            flex-direction: column;
+        }
+        @include mixin.litle{
+            padding: 25px 0;
+        }
         .textMark{
             flex-grow: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            @include mixin.medium{
+                margin-bottom: 20px;
+            }
             small{
                 color:colors.$color1;
             }
@@ -32,9 +42,15 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            @include mixin.medium{
+                flex-wrap: wrap;
+            }
+            @include mixin.litle{
+                justify-content: space-around;
+            }
             i {
                 color: colors.$color3;
-                font-size: 60px;
+                font-size: 3.4rem;
                 transition: all .5s ease;
                 &:hover {
                     transform: scale(1.1);
@@ -48,19 +64,34 @@
 .leadBackground{
     background-color:colors.$color7;
     padding: 55px 0;
+    @include mixin.litle{
+        padding: 25px 0;
+    }
     .icons{
         display: flex;   
         justify-content: space-between;
         flex-wrap: wrap;
-
+        @include mixin.litle{
+            flex-direction: column;
+        }
         &__container{
             display: flex;
             flex-basis: calc(33% - 35px);
             margin-bottom: 35px;
+
+            @include mixin.medium{
+                flex-direction: column;
+                align-items: center;
+                flex-basis: calc(50% - 20px);
+            }
         }
         &__icon{
             color:colors.$color1;
-            font-size: 50px;   
+            font-size: 50px; 
+            
+            @include mixin.medium{
+                margin-bottom: 20px;
+            }
         }
         &__content{
             margin-left: 20px;
@@ -107,6 +138,14 @@
 
     &__image{
         width:30%;
+        @include mixin.medium{
+            width: 45%;
+            margin-bottom: 25px;
+        }
+
+        @include mixin.litle{
+            width: 100%;
+        }
     }
 }
 
@@ -119,6 +158,9 @@
     background-size: cover;
     position: relative;
     padding: 50px 0;
+    @include mixin.litle{
+        padding: 25px 0;
+    }
     &::before{
         content:'';
         width: 100%;
@@ -133,11 +175,20 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        @include mixin.litle{
+            flex-direction: column;
+        }
         &__left{
             width: 45%;
+            @include mixin.litle{
+                width: 100%;
+            }
         }
         &__image{
             width: 100%;
+            @include mixin.litle{
+                display: none;
+            }
         }
         &__small{
             color: colors.$color3;
@@ -154,6 +205,9 @@
         &__right{
             width: 45%;
             padding: 40px 0;
+            @include mixin.litle{
+                width: 100%;
+            }
         }
     }
     .step{
@@ -200,6 +254,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include mixin.litle{
+        margin-bottom: 30px;
+    }
     &__title{
         @include mixin.title(var.$tipografia1, 1.8rem, colors.$color4 );
     }
@@ -210,6 +267,10 @@
 .peopleCards{
     display: flex;
     justify-content: space-between;
+    @include mixin.litle{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .peopleCard{
     width: 28%;
@@ -219,6 +280,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include mixin.litle{
+        width: 80%;
+        margin-bottom: 35px;
+        padding: 10px;
+    }
     &__image{
         width: 100px;
         height: 100px;
@@ -227,12 +293,18 @@
         border-radius: 50%;
         position: relative;
         top: -50px;
+        @include mixin.litle{
+            top: 0px;
+        }
     }
     &__content{
         position: relative;
         top: -50px;
         padding: 15px;
         text-align: center;
+        @include mixin.litle{
+            top: 0px;
+        }
     }
     &__title{
         margin-bottom: 15px;
@@ -258,12 +330,29 @@
             font-size: 1.3rem;
             font-family: var.$tipografia1;
             width: 35%;
+
+            @include mixin.medium{
+                width: 47%;
+            }
+            @include mixin.litle{
+                width: 100%;
+                margin-bottom: 25px;
+            }
         }
         .formSubscription{
             width: 50%;
+            @include mixin.medium{
+                width: 47%;
+            }
+            @include mixin.litle{
+                width: 100%;
+            }
             .form{
                 display: flex;
                 flex-wrap: wrap;
+                @include mixin.litle{
+                    flex-direction: column;
+                }
                 &__email{
                     border: none;
                     background-color: transparent;
@@ -271,6 +360,9 @@
                     font-size: 20px;
                     border-bottom: 2px solid colors.$color3;    
                     flex-grow: 3;
+                    @include mixin.medium{
+                        margin-bottom: 15px;
+                    }
                     &::placeholder{
                         color: colors.$color3;
                         font-weight: 700;     
@@ -290,6 +382,10 @@
                     margin-left: 20px;
                     cursor: pointer;
                     flex-grow: 1;
+                    @include mixin.medium{
+                        margin-bottom: 0;
+                        margin-left: 0;
+                    }
                 }
             }
         }

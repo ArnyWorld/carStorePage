@@ -21,10 +21,12 @@
         min-width: 200px;
         position: relative;
         margin-bottom: 150px;
-
+        @include mixin.litle{
+            margin-bottom: 50px;
+        }
         &__title{
             font-family: var.$tipografia1;
-            font-size: 30px;
+            font-size: 1.6rem;
             text-align: justify;
             color: colors.$color3;
             line-height: 1.6;

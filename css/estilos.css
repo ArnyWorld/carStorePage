@@ -66,9 +66,14 @@ html .goTop {
   position: relative;
   margin-bottom: 150px;
 }
+@media (max-width: 768px) {
+  .headerHome .textHeader {
+    margin-bottom: 50px;
+  }
+}
 .headerHome .textHeader__title {
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-size: 1.6rem;
   text-align: justify;
   color: #f6f8fc;
   line-height: 1.6;
@@ -323,12 +328,28 @@ html .goTop {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+@media (max-width: 992px) {
+  .marksCars .marks {
+    padding: 30px 0;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .marksCars .marks {
+    padding: 25px 0;
+  }
+}
 .marksCars .marks .textMark {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 992px) {
+  .marksCars .marks .textMark {
+    margin-bottom: 20px;
+  }
 }
 .marksCars .marks .textMark small {
   color: #ff3737;
@@ -343,9 +364,19 @@ html .goTop {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 992px) {
+  .marksCars .marks .iconMarks {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .marksCars .marks .iconMarks {
+    justify-content: space-around;
+  }
+}
 .marksCars .marks .iconMarks i {
   color: #f6f8fc;
-  font-size: 60px;
+  font-size: 3.4rem;
   transition: all 0.5s ease;
 }
 .marksCars .marks .iconMarks i:hover {
@@ -357,19 +388,41 @@ html .goTop {
   background-color: rgba(171, 171, 171, 0.2);
   padding: 55px 0;
 }
+@media (max-width: 768px) {
+  .leadBackground {
+    padding: 25px 0;
+  }
+}
 .leadBackground .icons {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .leadBackground .icons {
+    flex-direction: column;
+  }
 }
 .leadBackground .icons__container {
   display: flex;
   flex-basis: calc(33% - 35px);
   margin-bottom: 35px;
 }
+@media (max-width: 992px) {
+  .leadBackground .icons__container {
+    flex-direction: column;
+    align-items: center;
+    flex-basis: calc(50% - 20px);
+  }
+}
 .leadBackground .icons__icon {
   color: #ff3737;
   font-size: 50px;
+}
+@media (max-width: 992px) {
+  .leadBackground .icons__icon {
+    margin-bottom: 20px;
+  }
 }
 .leadBackground .icons__content {
   margin-left: 20px;
@@ -422,6 +475,17 @@ html .goTop {
 .newCars__image {
   width: 30%;
 }
+@media (max-width: 992px) {
+  .newCars__image {
+    width: 45%;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .newCars__image {
+    width: 100%;
+  }
+}
 
 /*Parallax*/
 .parallax {
@@ -431,6 +495,11 @@ html .goTop {
   background-size: cover;
   position: relative;
   padding: 50px 0;
+}
+@media (max-width: 768px) {
+  .parallax {
+    padding: 25px 0;
+  }
 }
 .parallax::before {
   content: "";
@@ -447,11 +516,26 @@ html .goTop {
   align-items: center;
   flex-wrap: wrap;
 }
+@media (max-width: 768px) {
+  .parallax .contentParallax {
+    flex-direction: column;
+  }
+}
 .parallax .contentParallax__left {
   width: 45%;
 }
+@media (max-width: 768px) {
+  .parallax .contentParallax__left {
+    width: 100%;
+  }
+}
 .parallax .contentParallax__image {
   width: 100%;
+}
+@media (max-width: 768px) {
+  .parallax .contentParallax__image {
+    display: none;
+  }
 }
 .parallax .contentParallax__small {
   color: #f6f8fc;
@@ -468,6 +552,11 @@ html .goTop {
 .parallax .contentParallax__right {
   width: 45%;
   padding: 40px 0;
+}
+@media (max-width: 768px) {
+  .parallax .contentParallax__right {
+    width: 100%;
+  }
 }
 .parallax .step {
   margin-bottom: 25px;
@@ -517,6 +606,11 @@ html .goTop {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .testimonials {
+    margin-bottom: 30px;
+  }
+}
 .testimonials__title {
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
@@ -535,6 +629,12 @@ html .goTop {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .peopleCards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .peopleCard {
   width: 28%;
@@ -545,6 +645,13 @@ html .goTop {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .peopleCard {
+    width: 80%;
+    margin-bottom: 35px;
+    padding: 10px;
+  }
+}
 .peopleCard__image {
   width: 100px;
   height: 100px;
@@ -554,11 +661,21 @@ html .goTop {
   position: relative;
   top: -50px;
 }
+@media (max-width: 768px) {
+  .peopleCard__image {
+    top: 0px;
+  }
+}
 .peopleCard__content {
   position: relative;
   top: -50px;
   padding: 15px;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .peopleCard__content {
+    top: 0px;
+  }
 }
 .peopleCard__title {
   margin-bottom: 15px;
@@ -593,12 +710,38 @@ html .goTop {
   font-family: "Montserrat", sans-serif;
   width: 35%;
 }
+@media (max-width: 992px) {
+  .subscriptionContainer .subscription__title {
+    width: 47%;
+  }
+}
+@media (max-width: 768px) {
+  .subscriptionContainer .subscription__title {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
 .subscriptionContainer .subscription .formSubscription {
   width: 50%;
+}
+@media (max-width: 992px) {
+  .subscriptionContainer .subscription .formSubscription {
+    width: 47%;
+  }
+}
+@media (max-width: 768px) {
+  .subscriptionContainer .subscription .formSubscription {
+    width: 100%;
+  }
 }
 .subscriptionContainer .subscription .formSubscription .form {
   display: flex;
   flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .subscriptionContainer .subscription .formSubscription .form {
+    flex-direction: column;
+  }
 }
 .subscriptionContainer .subscription .formSubscription .form__email {
   border: none;
@@ -607,6 +750,11 @@ html .goTop {
   font-size: 20px;
   border-bottom: 2px solid #f6f8fc;
   flex-grow: 3;
+}
+@media (max-width: 992px) {
+  .subscriptionContainer .subscription .formSubscription .form__email {
+    margin-bottom: 15px;
+  }
 }
 .subscriptionContainer .subscription .formSubscription .form__email::placeholder {
   color: #f6f8fc;
@@ -626,6 +774,12 @@ html .goTop {
   margin-left: 20px;
   cursor: pointer;
   flex-grow: 1;
+}
+@media (max-width: 992px) {
+  .subscriptionContainer .subscription .formSubscription .form__submit {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
 }
 
 footer {
