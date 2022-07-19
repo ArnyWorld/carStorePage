@@ -1,0 +1,45 @@
+@use '../base/variables' as var;
+@use '../base/mixin' as mixin;
+@use '../base/colores' as colors;
+
+
+/*Marks Cars*/
+.marksCars{
+    background-color: colors.$color5;
+    .marks {
+        width: 100%;
+        padding: 38px 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .textMark{
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            small{
+                color:colors.$color1;
+            }
+
+            h2{
+                color:colors.$color3;
+                font-family: var.$tipografia1;
+            }
+        }
+        .iconMarks{
+            flex-grow: 3;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            i {
+                color: colors.$color3;
+                font-size: 60px;
+                transition: all .5s ease;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
