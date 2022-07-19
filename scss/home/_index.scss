@@ -75,3 +75,37 @@
         }
     }
 }
+
+
+/*newCars*/
+.newCars{
+    padding: 35px 0;
+
+    &__header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    &__title{
+
+        @include mixin.title(var.$tipografia1, 1.8rem, colors.$color4);
+        margin-bottom: 15px;
+    }
+
+    &__description{
+        @include mixin.text(var.$tipografia2, 1.2rem, colors.$color2);
+    }
+
+    &__images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    &__image{
+        width:30%;
+    }
+}

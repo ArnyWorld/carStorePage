@@ -389,6 +389,40 @@ html .goTop {
   line-height: 1.6;
 }
 
+/*newCars*/
+.newCars {
+  padding: 35px 0;
+}
+.newCars__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.newCars__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+  margin-bottom: 15px;
+}
+.newCars__description {
+  font-family: "Source Sans Pro", helvetica;
+  font-size: 1.2rem;
+  color: #797979;
+  text-align: left;
+  line-height: 1.6;
+}
+.newCars__images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.newCars__image {
+  width: 30%;
+}
+
 footer {
   width: 100%;
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../../img/separador.jpg");
