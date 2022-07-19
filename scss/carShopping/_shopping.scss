@@ -1,0 +1,126 @@
+@use '../base/variables' as var;
+@use '../base/mixin' as mixin;
+@use '../base/colores' as colors;
+
+.mainShopping{
+    margin-top: 8em;
+    position: relative;
+    margin-bottom: 2em;
+    min-height: 100vh;
+    .title{
+        @include mixin.title(var.$tipografia1,1.8rem, colors.$color3);
+        margin-bottom: 1em;
+    }
+    .shopping{
+        padding: 1.5em;
+        background-color: rgba(0,0,0,.8);
+        display: flex;
+        justify-content: space-between;
+
+        @include mixin.litle{
+            flex-direction: column;
+        }
+
+        .products{
+            width: 75%;
+            
+            @include mixin.litle{
+                width: 100%;
+                margin-bottom: 1.5em;
+            }
+
+            .titleShopping{
+                @include mixin.text(var.$tipografia1,1rem, colors.$color3, left);
+                font-weight: lighter;
+                margin-bottom: 1em;
+            }
+            
+            .cardsShopping{
+                .product{
+                    margin-bottom: 1em;
+                    border-bottom: 1px solid colors.$color3;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    img{
+                        width: 20%;
+                        @include mixin.medium{
+                            width: 40%;
+                        }
+
+                    }
+                    .details{
+                        width: 80%;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        
+                        @include mixin.medium{
+                            width: 50%;
+                            flex-direction: column;
+                            align-items: flex-start
+                        }
+                        .textShopping{
+                            .title{
+                                @include mixin.title(var.$tipografia1,1.4rem, colors.$color3);
+                                margin-bottom: 0.2em;
+                            }
+                            .text{
+                                @include mixin.text(var.$tipografia2,1rem, colors.$color3, left);
+                            }
+                        }
+                        .delete{
+                           cursor: pointer;
+                            @include mixin.text(var.$tipografia1,1rem, colors.$color1);                        
+                        }
+                        .totalPrice{
+                         
+                            .total{
+                                @include mixin.text(var.$tipografia2,1.3rem, colors.$color1);
+                                font-weight: bold;
+                            }
+                            .discount{
+                                @include mixin.text(var.$tipografia2,1rem, colors.$color3);
+                                font-weight: bold;
+                                text-decoration: line-through;
+                                opacity: .6;
+                            }
+                        }
+                            
+                    }
+                }
+            }
+        }
+        .accumulated{
+            width: 20%;
+
+            @include mixin.litle{
+                width: 100%
+            }
+
+
+            &__title{
+                @include mixin.title(var.$tipografia1,1.3rem, colors.$color3);
+            }
+
+            &__price{
+                @include mixin.text(var.$tipografia2,1.7rem, colors.$color1);
+                font-weight: bold;
+            }
+
+            &__discount{
+                @include mixin.text(var.$tipografia2,1rem, colors.$color3, left);
+                font-weight: bold;
+                text-decoration: line-through;
+                opacity: .6;
+                margin-bottom: 1em;
+            }
+            &__button{
+
+                @include mixin.button(colors.$color1,colors.$color3, none );
+                width: 100%;
+            }
+        }
+    }
+}

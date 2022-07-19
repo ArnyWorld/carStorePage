@@ -516,6 +516,162 @@ main .subscribe .subscribeContent .subscribeContent__form .formButton {
   }
 }
 
+.mainShopping {
+  margin-top: 8em;
+  position: relative;
+  margin-bottom: 2em;
+  min-height: 100vh;
+}
+.mainShopping .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  color: #f6f8fc;
+  margin-bottom: 1.2rem;
+  margin-bottom: 1em;
+}
+.mainShopping .shopping {
+  padding: 1.5em;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .mainShopping .shopping {
+    flex-direction: column;
+  }
+}
+.mainShopping .shopping .products {
+  width: 75%;
+}
+@media (max-width: 768px) {
+  .mainShopping .shopping .products {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+}
+.mainShopping .shopping .products .titleShopping {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #f6f8fc;
+  text-align: left;
+  line-height: 1.6;
+  font-weight: lighter;
+  margin-bottom: 1em;
+}
+.mainShopping .shopping .products .cardsShopping .product {
+  margin-bottom: 1em;
+  border-bottom: 1px solid #f6f8fc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainShopping .shopping .products .cardsShopping .product img {
+  width: 20%;
+}
+@media (max-width: 992px) {
+  .mainShopping .shopping .products .cardsShopping .product img {
+    width: 40%;
+  }
+}
+.mainShopping .shopping .products .cardsShopping .product .details {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .mainShopping .shopping .products .cardsShopping .product .details {
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.mainShopping .shopping .products .cardsShopping .product .details .textShopping .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  color: #f6f8fc;
+  margin-bottom: 1.2rem;
+  margin-bottom: 0.2em;
+}
+.mainShopping .shopping .products .cardsShopping .product .details .textShopping .text {
+  font-family: "Source Sans Pro", helvetica;
+  font-size: 1rem;
+  color: #f6f8fc;
+  text-align: left;
+  line-height: 1.6;
+}
+.mainShopping .shopping .products .cardsShopping .product .details .delete {
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #ff3737;
+  text-align: left;
+  line-height: 1.6;
+}
+.mainShopping .shopping .products .cardsShopping .product .details .totalPrice .total {
+  font-family: "Source Sans Pro", helvetica;
+  font-size: 1.3rem;
+  color: #ff3737;
+  text-align: left;
+  line-height: 1.6;
+  font-weight: bold;
+}
+.mainShopping .shopping .products .cardsShopping .product .details .totalPrice .discount {
+  font-family: "Source Sans Pro", helvetica;
+  font-size: 1rem;
+  color: #f6f8fc;
+  text-align: left;
+  line-height: 1.6;
+  font-weight: bold;
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.mainShopping .shopping .accumulated {
+  width: 20%;
+}
+@media (max-width: 768px) {
+  .mainShopping .shopping .accumulated {
+    width: 100%;
+  }
+}
+.mainShopping .shopping .accumulated__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  color: #f6f8fc;
+  margin-bottom: 1.2rem;
+}
+.mainShopping .shopping .accumulated__price {
+  font-family: "Source Sans Pro", helvetica;
+  font-size: 1.7rem;
+  color: #ff3737;
+  text-align: left;
+  line-height: 1.6;
+  font-weight: bold;
+}
+.mainShopping .shopping .accumulated__discount {
+  font-family: "Source Sans Pro", helvetica;
+  font-size: 1rem;
+  color: #f6f8fc;
+  text-align: left;
+  line-height: 1.6;
+  font-weight: bold;
+  text-decoration: line-through;
+  opacity: 0.6;
+  margin-bottom: 1em;
+}
+.mainShopping .shopping .accumulated__button {
+  background-color: #ff3737;
+  color: #f6f8fc;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7em 1.7em;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  width: 100%;
+}
+
 footer {
   width: 100%;
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../../img/separador.jpg");
