@@ -43,3 +43,35 @@
         }
     }
 }
+/*Icons*/
+
+.leadBackground{
+    background-color:colors.$color7;
+    padding: 55px 0;
+    .icons{
+        display: flex;   
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &__container{
+            display: flex;
+            flex-basis: calc(33% - 35px);
+            margin-bottom: 35px;
+        }
+        &__icon{
+            color:colors.$color1;
+            font-size: 50px;   
+        }
+        &__content{
+            margin-left: 20px;
+        }
+        &__title{
+            @include mixin.title(var.$tipografia1, 1rem, colors.$color4);
+            margin-bottom: 0.4rem;
+        }
+
+        &__text{
+            @include mixin.text(var.$tipografia2, 1rem, colors.$color2);       
+        }
+    }
+}

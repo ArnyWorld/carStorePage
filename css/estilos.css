@@ -352,6 +352,43 @@ html .goTop {
   transform: scale(1.1);
 }
 
+/*Icons*/
+.leadBackground {
+  background-color: rgba(171, 171, 171, 0.2);
+  padding: 55px 0;
+}
+.leadBackground .icons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.leadBackground .icons__container {
+  display: flex;
+  flex-basis: calc(33% - 35px);
+  margin-bottom: 35px;
+}
+.leadBackground .icons__icon {
+  color: #ff3737;
+  font-size: 50px;
+}
+.leadBackground .icons__content {
+  margin-left: 20px;
+}
+.leadBackground .icons__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+.leadBackground .icons__text {
+  font-family: "Source Sans Pro", helvetica;
+  font-size: 1rem;
+  color: #797979;
+  text-align: left;
+  line-height: 1.6;
+}
+
 footer {
   width: 100%;
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../../img/separador.jpg");
