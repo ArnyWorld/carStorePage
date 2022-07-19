@@ -1,0 +1,67 @@
+@use './variables' as var;
+@use './colores' as colors;
+
+@mixin darkLayer($valor){
+    background-color: rgba(0,0,0,$valor);
+}
+
+@mixin medium{
+    @media(max-width:var.$medium){
+        @content;
+    }
+}
+
+@mixin litle{
+    @media(max-width:var.$litle){
+        @content;
+    }
+}
+
+@mixin background($image){
+    background-image: linear-gradient(to left, rgba(0,0,0,.8), rgba(0,0,0,.4)), url($image);
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin title($tipografia, $size, $color){
+    font-family: $tipografia;
+    font-size: $size;
+    color: $color;
+    margin-bottom: 1.2rem;
+}
+
+@mixin text($tipografia, $size, $color, $align:left){
+    font-family: $tipografia;
+    font-size: $size;
+    color: $color;
+    text-align: $align;
+    line-height: 1.6;
+}
+
+@mixin inputTransparent($width, $font, $borderWidth:1px){
+    width: $width;
+    font-size: $font;
+    background-color: transparent;
+    border: none;
+    color: colors.$color3;
+    border-bottom: $borderWidth solid colors.$color3;
+    &::placeholder{
+        color: colors.$color3;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+@mixin button($background, $color, $border){
+    background-color: $background;
+    color: $color;
+    font-size: 1rem;
+    border: $border;
+    border-radius: 5px;
+    padding: 0.7em 1.7em;
+    font-weight: 700;
+    font-family: var.$tipografia1;
+    cursor: pointer;
+
+}
