@@ -49,7 +49,14 @@ main{
             width: 23%;
             overflow: hidden;
             margin-bottom: 2em;
-            
+            @include mixin.medium{
+                width: 32%;   
+            }
+
+            @include mixin.litle{
+                width: 45%;
+            }
+
             &__image{
                 padding: 1em;
                 background-color: colors.$color3;
@@ -102,21 +109,42 @@ main{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @include mixin.litle{
+                flex-direction: column
+            }
             .subscribeContent__title{
                 @include mixin.title(var.$tipografia1,1.3rem, colors.$color3);
                 margin-bottom: 0;
+                
+                @include mixin.litle{
+                    margin-bottom: 1em;
+                }
             }
             .subscribeContent__form{
                 width: 45%;
                 display: flex;
                 justify-content: space-between;
-                
+                @include mixin.medium{
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                @include mixin.litle{
+                    width: 100%;
+                }
                 .formText{
+                    @include mixin.medium{
+                        width:100%;
+                        margin-bottom: 1em; 
+                    }     
                     @include mixin.inputTransparent(75%,1rem, 3px);
                     padding: 0.6rem;
 
                 }
                 .formButton{
+                    @include mixin.medium{
+                        width:100%; 
+                    }    
                     @include mixin.button(transparent, colors.$color3, 1px solid colors.$color3);
                     width: 20%;
                     padding: 0.8em 0;

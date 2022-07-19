@@ -383,6 +383,16 @@ main .accessories .accessory {
   overflow: hidden;
   margin-bottom: 2em;
 }
+@media (max-width: 992px) {
+  main .accessories .accessory {
+    width: 32%;
+  }
+}
+@media (max-width: 768px) {
+  main .accessories .accessory {
+    width: 45%;
+  }
+}
 main .accessories .accessory__image {
   padding: 1em;
   background-color: #f6f8fc;
@@ -433,6 +443,11 @@ main .subscribe .subscribeContent {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  main .subscribe .subscribeContent {
+    flex-direction: column;
+  }
+}
 main .subscribe .subscribeContent .subscribeContent__title {
   font-family: "Montserrat", sans-serif;
   font-size: 1.3rem;
@@ -440,10 +455,26 @@ main .subscribe .subscribeContent .subscribeContent__title {
   margin-bottom: 1.2rem;
   margin-bottom: 0;
 }
+@media (max-width: 768px) {
+  main .subscribe .subscribeContent .subscribeContent__title {
+    margin-bottom: 1em;
+  }
+}
 main .subscribe .subscribeContent .subscribeContent__form {
   width: 45%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 992px) {
+  main .subscribe .subscribeContent .subscribeContent__form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  main .subscribe .subscribeContent .subscribeContent__form {
+    width: 100%;
+  }
 }
 main .subscribe .subscribeContent .subscribeContent__form .formText {
   width: 75%;
@@ -453,6 +484,12 @@ main .subscribe .subscribeContent .subscribeContent__form .formText {
   color: #f6f8fc;
   border-bottom: 3px solid #f6f8fc;
   padding: 0.6rem;
+}
+@media (max-width: 992px) {
+  main .subscribe .subscribeContent .subscribeContent__form .formText {
+    width: 100%;
+    margin-bottom: 1em;
+  }
 }
 main .subscribe .subscribeContent .subscribeContent__form .formText::placeholder {
   color: #f6f8fc;
@@ -472,6 +509,11 @@ main .subscribe .subscribeContent .subscribeContent__form .formButton {
   cursor: pointer;
   width: 20%;
   padding: 0.8em 0;
+}
+@media (max-width: 992px) {
+  main .subscribe .subscribeContent .subscribeContent__form .formButton {
+    width: 100%;
+  }
 }
 
 footer {
