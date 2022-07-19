@@ -1,0 +1,264 @@
+@use '../base/globales';
+@use '../base/colores' as colors;
+@use '../base/mixin' as mixin;
+@use '../base/variables' as var;
+
+.header{
+    width: 100%;
+    min-height:80vh ;
+    position: relative;
+    
+}
+
+.headerHome{
+    @include mixin.background('../../img/headerHome.jpg');
+    height: 85vh;
+    display: flex;
+    align-items: flex-end;
+
+    .textHeader{
+        max-width: 450px;
+        min-width: 200px;
+        position: relative;
+        margin-bottom: 150px;
+
+        &__title{
+            font-family: var.$tipografia1;
+            font-size: 30px;
+            text-align: justify;
+            color: colors.$color3;
+            line-height: 1.6;
+            margin-bottom: 20px; 
+        }
+        &__btnPrimary{
+            @include mixin.button(colors.$color1, colors.$color3, none);
+        }
+        &__btnSecondary{
+            @include mixin.button(colors.$color4, colors.$color3, none);
+        }
+    }
+
+}
+
+.bodyShopping{
+    @include mixin.background('../../img/background.jpg');    
+    min-height:100vh;
+    margin-bottom: 0;
+    background-attachment: fixed;
+
+}
+
+.menuMovil{
+    width: 75%;
+    background-color: colors.$color4;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    padding: 1.5em;
+    transition: transform .5s ease;
+    transform: translateX(-100%);
+    
+    &__logo{
+        width: 60%;
+        margin-bottom: 1em;
+        img{
+            width: 100%;
+        }
+    }
+
+    &__menu{
+        display: flex;
+        flex-direction: column;
+
+        .navigationList{
+            margin-bottom: 1em;
+            .navigationLink{
+                @include mixin.text(var.$tipografia1, 1rem, colors.$color3);                
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 0%;
+                    height: 2px;
+                    background-color: colors.$color1;
+                    position: absolute;
+                    bottom: -4px;
+                    transition: width .5s ease-in;
+                }
+                &:hover{
+                    &::before{
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+    }
+    &__icon{
+        color: colors.$color3;
+        font-size: 1.7rem;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        transition: transform .5s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+
+}
+
+.bar__navigation{
+    padding: 1.5em;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__label{
+            cursor: pointer;
+            color: colors.$color3;
+            font-size: 2.2rem;
+            display: none;
+            @include mixin.medium{
+                order: 1;
+                display: flex;
+            }
+        }
+        &__logo{
+            width: 15%;
+            @include mixin.medium{
+                order: 2;
+                width: 25%;
+            }
+            @include mixin.litle{
+                width: 35%;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        &__menu{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            @include mixin.medium{
+                display: none
+            }
+            .navigationList{
+                .navigationLink{
+                    @include mixin.text(var.$tipografia1, 1rem, colors.$color3);
+                    
+                }
+            }
+        }
+        &__car{
+            @include mixin.medium{
+                order: 3;
+                
+            }
+            // &:hover{
+            //     transform: scale(1.1);
+            // }
+            // &:hover~.products{
+            //     display: block;
+            // }
+            .submenu{
+
+                &:hover{
+                    .products{
+                        display: block;
+                        position: absolute;
+                        z-index: 100;
+                        top: 75%;
+                        right: 50px;
+                        width: 25rem;
+                        background-color: rgba(255,255,255,1);
+                        padding: 1em;
+                        box-sizing: border-box;
+
+                        @include mixin.litle{
+                            right: 18px;
+                            width: 90%;
+                        }
+
+                        &__table{
+                        
+                            width: 100%;
+                            padding: 1em;
+                            margin-bottom: 1em;
+
+                            .title{
+                                @include mixin.title(var.$tipografia1,1rem, colors.$color1);
+                                
+                            }
+
+                            thead{
+                                tr{
+                                    th{
+                                        @include mixin.title(var.$tipografia1, 1rem, colors.$color4);
+                                        margin-bottom: 0;
+                                        padding: 0.5em
+                                    }
+                                }
+                            }
+                            tbody{
+                                tr{
+                                    td{
+                                        text-align: center;
+                                        color: colors.$color4;
+                                        font-family: var.$tipografia2;
+                                    }
+                                    .delete-p{
+                                        display: flex;
+                                        align-items: center;
+                                        color: colors.$color1;
+                                        font-size: 1.2rem;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                        &__total{
+                            @include mixin.text(var.$tipografia1, 1.7rem, colors.$color1, right);
+                        }
+                        &__clear{
+                            // width: 100%;
+                            // border: 1px solid colors.$color1;
+                            // background-color: transparent;
+                            // border-radius: 4px;
+                            // padding: 0.5em 0;
+                            // color: colors.$color1;
+                            @include mixin.button(transparent,colors.$color1,1px solid colors.$color1);
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .icon{
+                    color: colors.$color3;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                    transition: transform .5s;
+                    padding: 0.7em;
+                    @include mixin.medium{
+                        font-size: 1.5rem;
+                    }
+                    
+                    &:hover+.products{
+                        display: block;
+                    }
+                }
+
+                .products{
+                    display: none;
+                }
+            }
+        }
+
+      
+    }
+}
