@@ -191,4 +191,56 @@
     }
     
 }
+
+
+/*testimonials*/
+
+.testimonials{
+    margin-bottom: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        @include mixin.title(var.$tipografia1, 1.8rem, colors.$color4 );
+    }
+    &__description{
+        @include mixin.text(var.$tipografia2, 1.2rem, colors.$color2);
+    }
+}
+.peopleCards{
+    display: flex;
+    justify-content: space-between;
+}
+.peopleCard{
+    width: 28%;
+    border: 1px solid colors.$color9;
+    background-color: colors.$color3;    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__image{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        object-position: top center;
+        border-radius: 50%;
+        position: relative;
+        top: -50px;
+    }
+    &__content{
+        position: relative;
+        top: -50px;
+        padding: 15px;
+        text-align: center;
+    }
+    &__title{
+        margin-bottom: 15px;
+        @include mixin.title(var.$tipografia1, 1.3rem, colors.$color4 );        
+    }
+    &__description{
+        color:colors.$color2;
+        @include mixin.text(var.$tipografia2, 1rem, colors.$color2);
+    }
+}
     
