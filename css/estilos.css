@@ -52,6 +52,13 @@ html .goTop {
   position: relative;
 }
 
+.headerShop {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/headerPorshe.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 25px;
+}
+
 .headerHome {
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../../img/headerHome.jpg");
   background-size: cover;

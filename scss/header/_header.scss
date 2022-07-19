@@ -10,6 +10,13 @@
     
 }
 
+.headerShop {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/headerPorshe.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+}
+
 .headerHome{
     @include mixin.background('../../img/headerHome.jpg');
     height: 85vh;
