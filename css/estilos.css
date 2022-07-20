@@ -50,51 +50,14 @@ html .goTop {
   width: 100%;
   min-height: 80vh;
   position: relative;
+  margin-bottom: 2em;
 }
 
-.headerHome {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../../img/headerHome.jpg");
+.headerListing {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/headerPorshe.jpg");
   background-size: cover;
   background-position: center;
   height: 85vh;
-  display: flex;
-  align-items: flex-end;
-}
-.headerHome .textHeader {
-  max-width: 450px;
-  min-width: 200px;
-  position: relative;
-  margin-bottom: 150px;
-}
-.headerHome .textHeader__title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  text-align: justify;
-  color: #f6f8fc;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-.headerHome .textHeader__btnPrimary {
-  background-color: #ff3737;
-  color: #f6f8fc;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  padding: 0.7em 1.7em;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-  cursor: pointer;
-}
-.headerHome .textHeader__btnSecondary {
-  background-color: #343a40;
-  color: #f6f8fc;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  padding: 0.7em 1.7em;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-  cursor: pointer;
 }
 
 .bodyShopping {
@@ -310,6 +273,45 @@ html .goTop {
 }
 .bar__navigation .navigation__car .submenu .products {
   display: none;
+}
+
+.main .listing {
+  margin-bottom: 2em;
+}
+.main .listing__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: #ff3737;
+  margin-bottom: 1.2rem;
+  margin-bottom: 1.5em;
+}
+.main .listing .gallery {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main .listing .gallery .car {
+  width: 400px;
+}
+.main .listing .gallery .car__image {
+  width: 100%;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+.main .listing .gallery .car__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+  margin-bottom: 0;
+}
+.main .listing .gallery .car__model {
+  font-family: "Source Sans Pro", helvetica;
+  font-size: 1rem;
+  color: #797979;
+  text-align: left;
+  line-height: 1.6;
 }
 
 footer {
