@@ -1,0 +1,66 @@
+@use '../base/variables' as var;
+@use '../base/mixin' as mixin;
+@use '../base/colores' as colors;
+
+.main{
+    .contact{
+        &__title{
+            @include mixin.title(var.$tipografia1, 1.5rem, colors.$color1);
+            margin-bottom: 1.5em;
+        }
+        &__container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .formContainer{
+                width: 45%;
+                &__description{
+                    @include mixin.text(var.$tipografia2, 1.3rem, colors.$color4, justify);
+                    margin-bottom: 2em;
+                }
+                &__form{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+                &__formGroup{
+                    margin-bottom: 1em;
+                    &:nth-child(1){
+                        width: 45%;
+                    }
+                    &:nth-child(2){
+                        width: 45%;
+                    }
+                    &:nth-child(3){
+                        width: 100%;
+                    }
+                    label{
+                        @include mixin.title(var.$tipografia1, 1.1rem, colors.$color4);
+                        font-weight: bold;
+                        display: inline-block;
+                    }   
+                }
+                &__name{
+                    width: 100%;
+                    display: block;
+                    padding: 1em;
+                }
+                &__email{
+                    width: 100%;
+                    display: block;
+                    padding: 1em;
+                }
+                &__message{
+                    width: 100%;
+                    display: block;
+                    padding: 1em;
+                }
+                &__submit{
+                    @include mixin.button(colors.$color1, colors.$color3, none);
+                    font-weight: 300;
+                }
+
+            }
+        }
+    }
+}

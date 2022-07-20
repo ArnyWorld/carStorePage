@@ -50,51 +50,14 @@ html .goTop {
   width: 100%;
   min-height: 80vh;
   position: relative;
+  margin-bottom: 2em;
 }
 
-.headerHome {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../../img/headerHome.jpg");
+.headerContact {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/headerPorshe.jpg");
   background-size: cover;
   background-position: center;
   height: 85vh;
-  display: flex;
-  align-items: flex-end;
-}
-.headerHome .textHeader {
-  max-width: 450px;
-  min-width: 200px;
-  position: relative;
-  margin-bottom: 150px;
-}
-.headerHome .textHeader__title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  text-align: justify;
-  color: #f6f8fc;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-.headerHome .textHeader__btnPrimary {
-  background-color: #ff3737;
-  color: #f6f8fc;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  padding: 0.7em 1.7em;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-  cursor: pointer;
-}
-.headerHome .textHeader__btnSecondary {
-  background-color: #343a40;
-  color: #f6f8fc;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  padding: 0.7em 1.7em;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-  cursor: pointer;
 }
 
 .bodyShopping {
@@ -310,6 +273,82 @@ html .goTop {
 }
 .bar__navigation .navigation__car .submenu .products {
   display: none;
+}
+
+.main .contact__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: #ff3737;
+  margin-bottom: 1.2rem;
+  margin-bottom: 1.5em;
+}
+.main .contact__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .contact__container .formContainer {
+  width: 45%;
+}
+.main .contact__container .formContainer__description {
+  font-family: "Source Sans Pro", helvetica;
+  font-size: 1.3rem;
+  color: #343a40;
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 2em;
+}
+.main .contact__container .formContainer__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .contact__container .formContainer__formGroup {
+  margin-bottom: 1em;
+}
+.main .contact__container .formContainer__formGroup:nth-child(1) {
+  width: 45%;
+}
+.main .contact__container .formContainer__formGroup:nth-child(2) {
+  width: 45%;
+}
+.main .contact__container .formContainer__formGroup:nth-child(3) {
+  width: 100%;
+}
+.main .contact__container .formContainer__formGroup label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+}
+.main .contact__container .formContainer__name {
+  width: 100%;
+  display: block;
+  padding: 1em;
+}
+.main .contact__container .formContainer__email {
+  width: 100%;
+  display: block;
+  padding: 1em;
+}
+.main .contact__container .formContainer__message {
+  width: 100%;
+  display: block;
+  padding: 1em;
+}
+.main .contact__container .formContainer__submit {
+  background-color: #ff3737;
+  color: #f6f8fc;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7em 1.7em;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  font-weight: 300;
 }
 
 footer {
