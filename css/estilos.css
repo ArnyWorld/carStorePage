@@ -334,6 +334,7 @@ html .goTop {
   display: flex;
   justify-content: space-evenly;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 .main .iconsAbout__container {
   background-color: #f6f8fc;
@@ -343,6 +344,16 @@ html .goTop {
   align-items: center;
   padding: 80px 35px;
   box-shadow: 2px 2px 5px 3px rgba(171, 171, 171, 0.5);
+}
+@media (max-width: 992px) {
+  .main .iconsAbout__container {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .main .iconsAbout__container {
+    width: 100%;
+  }
 }
 .main .iconsAbout__icon {
   color: #ff3737;
@@ -366,12 +377,23 @@ html .goTop {
   display: flex;
   justify-content: space-around;
   padding: 2em 0;
+  margin-bottom: 3em;
 }
 .main .firstMarket__image {
   width: 40%;
 }
+@media (max-width: 992px) {
+  .main .firstMarket__image {
+    display: none;
+  }
+}
 .main .firstMarket__content {
   width: 50%;
+}
+@media (max-width: 992px) {
+  .main .firstMarket__content {
+    width: 100%;
+  }
 }
 .main .firstMarket__title {
   font-family: "Montserrat", sans-serif;
@@ -394,10 +416,21 @@ html .goTop {
   justify-content: space-between;
   margin-bottom: 2em;
 }
+@media (max-width: 768px) {
+  .main .firstMarket .details {
+    flex-direction: column;
+  }
+}
 .main .firstMarket .details__car {
   display: flex;
   justify-content: space-between;
   width: 45%;
+}
+@media (max-width: 768px) {
+  .main .firstMarket .details__car {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
 }
 .main .firstMarket .details__icon {
   color: #ff3737;
@@ -443,9 +476,26 @@ html .goTop {
 .main .ourTeam .teams {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .main .ourTeam .teams {
+    justify-content: center;
+  }
 }
 .main .ourTeam .teams .team {
   width: 20%;
+}
+@media (max-width: 992px) {
+  .main .ourTeam .teams .team {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .main .ourTeam .teams .team {
+    width: 90%;
+    margin-bottom: 1.3em;
+  }
 }
 .main .ourTeam .teams .team__image {
   width: 100%;
