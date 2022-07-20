@@ -40,5 +40,52 @@
             @include mixin.text(var.$tipografia2, 1rem, colors.$color2, center);
         }
     }
+    .firstMarket{
+        display: flex;
+        justify-content: space-around;
+        padding: 2em 0;
+        &__image{
+            width: 40%;
+        }
+        &__content{
+            width: 50%;
+        }
+        &__title{
+            @include mixin.title(var.$tipografia1, 1.8rem, colors.$color4);
+            margin-bottom: 15px;
+        }
+        &__text{
+            @include mixin.text(var.$tipografia2, 1rem, colors.$color2, justify);
+            margin-bottom: 2em;
+        }
+
+        .details{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2em;
+            &__car{
+                display: flex;
+                justify-content: space-between;
+                width: 45%;
+            }
+            &__icon{
+                color: colors.$color1;
+                font-size: 2.5rem;
+                margin-right: 2rem;
+            }
+            &__title{
+                @include mixin.title(var.$tipografia1, 1rem, colors.$color4);
+                margin-bottom: 0;
+            }
+            &__text{
+                @include mixin.text(var.$tipografia2, 0.9rem, colors.$color5, justify);
+            }
+        }
+        &__button{
+            @include mixin.button(colors.$color1, colors.$color3, none);
+            font-weight: 300;
+        }
+    }
 
 }
