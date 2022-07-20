@@ -7,37 +7,12 @@
     width: 100%;
     min-height:80vh ;
     position: relative;
-    
+    margin-bottom: 2em;    
 }
 
-.headerHome{
-    @include mixin.background('../../img/headerHome.jpg');
+.headerBlog{
+    @include mixin.background('../img/headerBlog.jpg');
     height: 85vh;
-    display: flex;
-    align-items: flex-end;
-
-    .textHeader{
-        max-width: 450px;
-        min-width: 200px;
-        position: relative;
-        margin-bottom: 150px;
-
-        &__title{
-            font-family: var.$tipografia1;
-            font-size: 30px;
-            text-align: justify;
-            color: colors.$color3;
-            line-height: 1.6;
-            margin-bottom: 20px; 
-        }
-        &__btnPrimary{
-            @include mixin.button(colors.$color1, colors.$color3, none);
-        }
-        &__btnSecondary{
-            @include mixin.button(colors.$color4, colors.$color3, none);
-        }
-    }
-
 }
 
 .bodyShopping{
