@@ -15,6 +15,9 @@
             align-items: center;
             .formContainer{
                 width: 45%;
+                @include mixin.medium{
+                    width: 100%;
+                }
                 &__description{
                     @include mixin.text(var.$tipografia2, 1.3rem, colors.$color4, justify);
                     margin-bottom: 2em;
@@ -28,9 +31,15 @@
                     margin-bottom: 1em;
                     &:nth-child(1){
                         width: 45%;
+                        @include mixin.litle{
+                            width: 100%;
+                        }
                     }
                     &:nth-child(2){
                         width: 45%;
+                        @include mixin.litle{
+                            width: 100%;
+                        }
                     }
                     &:nth-child(3){
                         width: 100%;
@@ -61,6 +70,11 @@
                     font-weight: 300;
                 }
 
+            }   
+        }
+        &__image{
+            @include mixin.medium{
+                display: none;
             }
         }
     }
@@ -72,7 +86,8 @@
         .iconsContainer{
             display: flex;
             justify-content: space-around;
-
+            flex-wrap: wrap;
+            gap: 2em;
             &__card{
                 background-color: #fff;
                 width: 27%;
@@ -81,6 +96,12 @@
                 align-items: center;
                 padding: 60px 35px;
                 box-shadow: 2px 2px 5px 3px colors.$color9;
+                @include mixin.medium{
+                    width: 45%;
+                }
+                @include mixin.litle{
+                    width: 100%;
+                }
             }
             &__icon{
                 color: colors.$color1;

@@ -293,6 +293,11 @@ html .goTop {
 .main .contact__container .formContainer {
   width: 45%;
 }
+@media (max-width: 992px) {
+  .main .contact__container .formContainer {
+    width: 100%;
+  }
+}
 .main .contact__container .formContainer__description {
   font-family: "Source Sans Pro", helvetica;
   font-size: 1.3rem;
@@ -312,8 +317,18 @@ html .goTop {
 .main .contact__container .formContainer__formGroup:nth-child(1) {
   width: 45%;
 }
+@media (max-width: 768px) {
+  .main .contact__container .formContainer__formGroup:nth-child(1) {
+    width: 100%;
+  }
+}
 .main .contact__container .formContainer__formGroup:nth-child(2) {
   width: 45%;
+}
+@media (max-width: 768px) {
+  .main .contact__container .formContainer__formGroup:nth-child(2) {
+    width: 100%;
+  }
 }
 .main .contact__container .formContainer__formGroup:nth-child(3) {
   width: 100%;
@@ -353,6 +368,11 @@ html .goTop {
   cursor: pointer;
   font-weight: 300;
 }
+@media (max-width: 992px) {
+  .main .contact__image {
+    display: none;
+  }
+}
 .main .leadBackground {
   background-color: #f6f6f7;
   padding: 3em 0;
@@ -360,6 +380,8 @@ html .goTop {
 .main .leadBackground .iconsContainer {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2em;
 }
 .main .leadBackground .iconsContainer__card {
   background-color: #fff;
@@ -369,6 +391,16 @@ html .goTop {
   align-items: center;
   padding: 60px 35px;
   box-shadow: 2px 2px 5px 3px rgba(171, 171, 171, 0.5);
+}
+@media (max-width: 992px) {
+  .main .leadBackground .iconsContainer__card {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .main .leadBackground .iconsContainer__card {
+    width: 100%;
+  }
 }
 .main .leadBackground .iconsContainer__icon {
   color: #ff3737;
