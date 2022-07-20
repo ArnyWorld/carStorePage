@@ -1,0 +1,44 @@
+@use '../base/variables' as var;
+@use '../base/mixin' as mixin;
+@use '../base/colores' as colors;
+
+.main{
+    .leadBackground{
+        background-color: colors.$color6;
+        padding: 45px 0;
+        margin-bottom: 2em;
+    }
+    .about{
+        &__title{
+            @include mixin.title(var.$tipografia1, 1.5rem, colors.$color1);
+            margin-bottom: 1.5em;
+        }
+    }
+    .iconsAbout{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2rem;
+
+        &__container{
+            background-color: colors.$color3;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 80px 35px;
+            box-shadow: 2px 2px 5px 3px colors.$color9;
+        }
+        &__icon{
+            color: colors.$color1;
+            font-size: 2.5rem;
+            margin-bottom: 1em;
+        }
+        &__title{
+            @include mixin.title(var.$tipografia1, 1.1rem, colors.$color4);
+        }
+        &__text{
+            @include mixin.text(var.$tipografia2, 1rem, colors.$color2, center);
+        }
+    }
+
+}

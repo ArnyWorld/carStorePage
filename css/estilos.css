@@ -52,6 +52,12 @@ html .goTop {
   position: relative;
 }
 
+.headerAbout {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/headerPorshe.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .headerHome {
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../../img/headerHome.jpg");
   background-size: cover;
@@ -310,6 +316,51 @@ html .goTop {
 }
 .bar__navigation .navigation__car .submenu .products {
   display: none;
+}
+
+.main .leadBackground {
+  background-color: #f6f6f7;
+  padding: 45px 0;
+  margin-bottom: 2em;
+}
+.main .about__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: #ff3737;
+  margin-bottom: 1.2rem;
+  margin-bottom: 1.5em;
+}
+.main .iconsAbout {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.main .iconsAbout__container {
+  background-color: #f6f8fc;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 35px;
+  box-shadow: 2px 2px 5px 3px rgba(171, 171, 171, 0.5);
+}
+.main .iconsAbout__icon {
+  color: #ff3737;
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+}
+.main .iconsAbout__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+}
+.main .iconsAbout__text {
+  font-family: "Source Sans Pro", helvetica;
+  font-size: 1rem;
+  color: #797979;
+  text-align: center;
+  line-height: 1.6;
 }
 
 footer {
