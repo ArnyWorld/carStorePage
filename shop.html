@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop - carStore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header headerShop">
+
+    </header>
+    <div class="menuMovil">
+        <div class="menuMovil__logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+        </div>
+        <ul class="menuMovil__menu">
+            <li class="navigationList">
+                <a href="index.html" class="navigationLink">Home</a>
+            </li>
+            <li class="navigationList">
+                <a href="about.html" class="navigationLink">About Us</a>
+            </li>
+            <li class="navigationList">
+                <a href="#" class="navigationLink">Cars Listing</a>
+            </li>
+            <li class="navigationList">
+                <a href="shop.html" class="navigationLink">Shop</a>
+            </li>
+            <li class="navigationList">
+                <a href="#" class="navigationLink">Blog</a>
+            </li>
+            <li class="navigationList">
+                <a href="contact.html" class="navigationLink">Contacts</a>
+            </li>
+        </ul>
+        <i class="menuMovil__icon fa-solid fa-circle-xmark"></i>
+    </div>
+    <nav class="bar__navigation">
+        <div class="container navigation">
+            <i class="navigation__label fa-solid fa-bars"></i>
+            <div class="navigation__logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <ul class="navigation__menu">
+                <li class="navigationList">
+                    <a href="index.html" class="navigationLink">Home</a>
+                </li>
+                <li class="navigationList">
+                    <a href="about.html" class="navigationLink">About Us</a>
+                </li>
+                <li class="navigationList">
+                    <a href="#" class="navigationLink">Cars Listing</a>
+                </li>
+                <li class="navigationList">
+                    <a href="shop.html" class="navigationLink">Shop</a>
+                </li>
+                <li class="navigationList">
+                    <a href="#" class="navigationLink">Blog</a>
+                </li>
+                <li class="navigationList">
+                    <a href="contact.html" class="navigationLink">Contacts</a>
+                </li>
+            </ul>
+            <ul class="navigation__car">
+                <li class="submenu">
+                    <a href="carShopping.html" class="">
+                        <i class="icon fa-solid fa-cart-shopping"></i>
+                    </a>
+                
+                    <div class="products">
+                        <table class="products__table">
+                            <caption class="title">Productos</caption>
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        
+                        </table>
+                        <p class="products__total"></p>
+                        <button class="products__clear">
+                            Vaciar Carrito
+                        </button>
+                    </div>
+                </li>
+            </ul>
+           
+        </div>
+    </nav>
+
+    <main class="main">
+        <section class="container shop">
+            <h2 class="shop__title">Shop</h2>
+            <p class="shop__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam delectus earum rem quibusdam eveniet repudiandae deleniti excepturi dolore. Dicta voluptatem quae veniam consequuntur esse. Magnam, labore similique! Voluptates, dicta?
+                Delectus at neque explicabo illum, itaque nihil facilis nisi rem ex modi possimus saepe accusantium dolor quod quibusdam temporibus ipsa fugit totam. Expedita ipsa, optio tenetur laudantium excepturi neque enim.    
+            </p>
+        </section>
+        <div class="parallaxShop">
+            <div class="container parallaxContent">
+                <h2 class="parallaxContent__title">Lorem ipsum dolor sit amet consectetur.</h2>
+                <p class="parallaxContent__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dicta tempora aliquam ea maxime enim est saepe necessitatibus cumque, impedit tenetur dignissimos veniam provident animi pariatur eveniet. Quos, tempora sed.
+                    Earum recusandae necessitatibus laudantium in rerum blanditiis repudiandae tempore cupiditate numquam consectetur ipsam, quos consequatur laboriosam reprehenderit suscipit incidunt labore delectus nisi perferendis molestias. Facere ex debitis dolores nam eligendi!
+                </p>
+            </div>
+        </div>
+        <section class="container">
+            <h1 class="title">Accessories</h1>
+            <div class="accessories">
+                <div class="accessory" >
+                    <div class="accessory__image">
+                        <img src="img/aceite-min.png" alt="Aceite">
+                        <i class="fa-solid fa-cart-plus" data-id="1"></i>
+                    </div>
+                    <div class="accessory__content" >
+                        <h3 class="name">Motor OIL</h3>
+                        <div class="price">
+                            <span class="delete">$25.00</span>
+                            <span class="success">$20.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accessory">
+                    <div class="accessory__image">
+                        <img src="img/amortiguador-min.png" alt="Amortiguador">
+                        <i class="fa-solid fa-cart-plus" data-id="2"></i>
+                    </div>
+                    <div class="accessory__content" >
+                        <h3 class="name">Shock Absorver</h3>
+                        <div class="price">
+                            <span class="delete">$55.00</span>
+                            <span class="success">$50.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accessory">
+                    <div class="accessory__image">
+                        <img src="img/bateria-min.png" alt="Batería">
+                        <i class="fa-solid fa-cart-plus" data-id="3"></i>
+                    </div>
+                    <div class="accessory__content">
+                        <h3 class="name">Battery</h3>
+                        <div class="price">
+                            <span class="delete">$165.00</span>
+                            <span class="success">$150.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accessory" >
+                    <div class="accessory__image">
+                        <img src="img/buija-min.png" alt="Bujía">
+                        <i class="fa-solid fa-cart-plus" data-id="4"></i>
+                    </div>
+                    <div class="accessory__content">
+                        <h3 class="name">Spark Plug</h3>
+                        <div class="price">
+                            <span class="delete">$45.00</span>
+                            <span class="success">$40.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accessory" >
+                    <div class="accessory__image">
+                        <img src="img/casco-min.png" alt="Casco">
+                        <i class="fa-solid fa-cart-plus" data-id="5"></i>
+                    </div>
+                    <div class="accessory__content">
+                        <h3 class="name">Helmet</h3>
+                        <div class="price">
+                            <span class="delete">$250.00</span>
+                            <span class="success">$225.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accessory" >
+                    <div class="accessory__image">
+                        <img src="img/filtroAire-min.png" alt="Filtro">
+                        <i class="fa-solid fa-cart-plus" data-id="6"></i>
+                    </div>
+                    <div class="accessory__content">
+                        <h3 class="name">Air Fliter</h3>
+                        <div class="price">
+                            <span class="delete">$55.00</span>
+                            <span class="success">$50.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accessory" >
+                    <div class="accessory__image">
+                        <img src="img/frenoDisco-min.png" alt="Freno de disco">
+                        <i class="fa-solid fa-cart-plus" data-id="7"></i>
+                    </div>
+                    <div class="accessory__content">
+                        <h3 class="name">Disc Brake</h3>
+                        <div class="price">
+                            <span class="delete">$55.00</span>
+                            <span class="success">$45.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accessory" >
+                    <div class="accessory__image">
+                        <img src="img/limpiaParabrisas-min.png" alt="Limpia parabrisas">
+                        <i class="fa-solid fa-cart-plus" data-id="8"></i>
+                    </div>
+                    <div class="accessory__content">
+                        <h3 class="name">Wiper Washer</h3>
+                        <div class="price">
+                            <span class="delete">$35.00</span>
+                            <span class="success">$30.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accessory" >
+                    <div class="accessory__image">
+                        <img src="img/llantas-min.png" alt="Neumaticos">
+                        <i class="fa-solid fa-cart-plus" data-id="9"></i>
+                    </div>
+                    <div class="accessory__content">
+                        <h3 class="name">Tire</h3>
+                        <div class="price">
+                            <span class="delete">$75.00</span>
+                            <span class="success">$70.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accessory" >
+                    <div class="accessory__image">
+                        <img src="img/motor-min.png" alt="Motor">
+                        <i class="fa-solid fa-cart-plus" data-id="10"></i>
+                    </div>
+                    <div class="accessory__content">
+                        <h3 class="name">Motor</h3>
+                        <div class="price">
+                            <span class="delete">$505.00</span>
+                            <span class="success">$450.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accessory" >
+                    <div class="accessory__image">
+                        <img src="img/pistones-min.png" alt="Pistón">
+                        <i class="fa-solid fa-cart-plus" data-id="11"></i>
+                    </div>
+                    <div class="accessory__content">
+                        <h3 class="name">Piston</h3>
+                        <div class="price">
+                            <span class="delete">$55.00</span>
+                            <span class="success">$45.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accessory" >
+                    <div class="accessory__image">
+                        <img src="img/volante-min.png" alt="Volante">
+                        <i class="fa-solid fa-cart-plus" data-id="12"></i>
+                    </div>
+                    <div class="accessory__content">
+                        <h3 class="name">Steering Wheel</h3>
+                        <div class="price">
+                            <span class="delete">$105.00</span>
+                            <span class="success">$90.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="subscribe">
+            <div class="container subscribeContent">
+                <h2 class="subscribeContent__title">
+                    Subscribe and Request your accessory
+                </h2>
+                <form class="subscribeContent__form">
+                    <input type="text" class="formText" placeholder="Accessory name">
+                    <input type="button" class="formButton" value="Send">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container detailsFooter">
+            <div class="detailsFooter__about">
+                <h4 class="title">About Us</h4>
+                <p class="text">Address: 2972 WWestheimer Rd. Santa Ana Illinois 85486</p>
+                <p class="text">Phone: (217) 55-0113</p>
+                <p class="text">E-mail: carStore@example.com</p>
+                <div class="networks">
+                    <i class="icon fa-brands fa-youtube"></i>
+                    <i class="icon fa-brands fa-facebook-f"></i>
+                    <i class="icon fa-brands fa-twitter"></i>
+                    <i class="icon fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <ul class="detailsFooter__menu">
+                <li class="navigationList">
+                    <a href="index.html" class="navigationLink">Home</a>
+                </li>
+                <li class="navigationList">
+                    <a href="about.html" class="navigationLink">About Us</a>
+                </li>
+                <li class="navigationList">
+                    <a href="#" class="navigationLink">Cars Listing</a>
+                </li>
+                <li class="navigationList">
+                    <a href="shop.html" class="navigationLink">Shop</a>
+                </li>
+                <li class="navigationList">
+                    <a href="#" class="navigationLink">Blog</a>
+                </li>
+                <li class="navigationList">
+                    <a href="contact.html" class="navigationLink">Contacts</a>
+                </li>
+            </ul>
+
+            <div class="detailsFooter__form">
+                <h3 class="title">Question</h3>
+                <form class="form" autocomplete="off">
+                    <input type="text" class="input" name="name" placeholder="Name*">
+                    <input type="number" class="input" name="phone" placeholder="Phone*">
+                    <label for="message" class="label">Message*</label>
+                    <textarea name="message" class="message" id="message" cols="30" rows="5"></textarea>
+                    <input class="button" type="submit" value="send">
+                </form>
+            </div>
+            
+        </div>
+        <p class="copy">
+            &copy;copyright carStore-2022
+        </p>
+    </footer>
+    <i class="goTop fa-solid fa-circle-chevron-up"></i>
+    <script src="js/generales.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
