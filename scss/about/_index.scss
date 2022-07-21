@@ -1,0 +1,157 @@
+@use '../base/variables' as var;
+@use '../base/mixin' as mixin;
+@use '../base/colores' as colors;
+
+.main{
+    .leadBackground{
+        background-color: colors.$color6;
+        padding: 45px 0;
+        margin-bottom: 2em;
+    }
+    .about{
+        &__title{
+            @include mixin.title(var.$tipografia1, 1.5rem, colors.$color1);
+            margin-bottom: 1.5em;
+        }
+    }
+    .iconsAbout{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2rem;
+        flex-wrap: wrap;
+
+        &__container{
+            background-color: colors.$color3;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 80px 35px;
+            box-shadow: 2px 2px 5px 3px colors.$color9;
+            @include mixin.medium{
+                width: 45%;
+            }
+            @include mixin.litle{
+                width: 100%;
+            }
+        }
+        &__icon{
+            color: colors.$color1;
+            font-size: 2.5rem;
+            margin-bottom: 1em;
+        }
+        &__title{
+            @include mixin.title(var.$tipografia1, 1.1rem, colors.$color4);
+        }
+        &__text{
+            @include mixin.text(var.$tipografia2, 1rem, colors.$color2, center);
+        }
+    }
+    .firstMarket{
+        display: flex;
+        justify-content: space-around;
+        padding: 2em 0;
+        margin-bottom: 3em;
+        &__image{
+            width: 40%;
+            @include mixin.medium{
+                display: none;
+            }
+        }
+        &__content{
+            width: 50%;
+            @include mixin.medium{
+                width: 100%;
+            }
+        }
+        &__title{
+            @include mixin.title(var.$tipografia1, 1.8rem, colors.$color4);
+            margin-bottom: 15px;
+        }
+        &__text{
+            @include mixin.text(var.$tipografia2, 1rem, colors.$color2, justify);
+            margin-bottom: 2em;
+        }
+
+        .details{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2em;
+            @include mixin.litle{
+                flex-direction: column;
+            }
+            &__car{
+                display: flex;
+                justify-content: space-between;
+                width: 45%;
+                @include mixin.litle{
+                    width: 100%;
+                    margin-bottom: 1.5em;
+                }
+            }
+            &__icon{
+                color: colors.$color1;
+                font-size: 2.5rem;
+                margin-right: 2rem;
+            }
+            &__title{
+                @include mixin.title(var.$tipografia1, 1rem, colors.$color4);
+                margin-bottom: 0;
+            }
+            &__text{
+                @include mixin.text(var.$tipografia2, 0.9rem, colors.$color5, justify);
+            }
+        }
+        &__button{
+            @include mixin.button(colors.$color1, colors.$color3, none);
+            font-weight: 300;
+        }
+    }
+
+    .ourTeam{
+        margin-bottom: 3em;
+        &__title{
+            @include mixin.title(var.$tipografia1, 1.8rem, colors.$color4);
+            margin-bottom: 15px;
+        }
+        .teams{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @include mixin.litle{
+                justify-content: center;
+            }
+            .team{
+                width: 20%;
+                @include mixin.medium{
+                    width: 40%;
+                }
+                @include mixin.litle{
+                    width: 90%;
+                    margin-bottom: 1.3em;
+                }
+                &__image{
+                    width: 100%;
+                    height: 450px;
+                    object-fit: cover;
+                    object-position: top center;
+                }
+                &__details{
+                    width: 100%;
+                    padding: 1em 0;
+                    background-color: colors.$color6;
+                    margin-top: -5px;
+                }
+                &__load{
+                    @include mixin.title(var.$tipografia1, 1.1rem, colors.$color4);
+                    text-align: center;
+                }
+                &__name{
+                    @include mixin.text(var.$tipografia2, 1rem, colors.$color1, center);                   
+                }
+            }
+        }
+    }
+
+}
