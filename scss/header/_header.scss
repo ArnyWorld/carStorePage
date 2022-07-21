@@ -29,6 +29,12 @@
     background-position: center;
     height: 85vh;
 
+    margin-bottom: 2em;    
+}
+
+.headerBlog{
+    @include mixin.background('../img/headerBlog.jpg');
+    height: 85vh;
 }
 .headerContact{
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/headerPorshe.jpg");
