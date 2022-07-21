@@ -136,7 +136,7 @@
         gap: 25px;
     }
 
-    &__image{
+    &__data{
         width:30%;
         @include mixin.medium{
             width: 45%;
@@ -146,6 +146,9 @@
         @include mixin.litle{
             width: 100%;
         }
+    }
+    &__image{
+        width: 100%;
     }
 }
 

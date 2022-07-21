@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CarStore</title>
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -199,12 +200,12 @@
                 <p class="newCars__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, assumenda!</p>
             </div>
             <div class="newCars__images">
-                <img src="img/car1.jpg" class="newCars__image" alt="auto1">
-                <img src="img/car2.jpg" class="newCars__image" alt="auto2">
-                <img src="img/car3.jpg" class="newCars__image" alt="auto3">
-                <img src="img/car4.jpg" class="newCars__image" alt="auto4">
-                <img src="img/car5.jpg" class="newCars__image" alt="auto5">
-                <img src="img/car6.jpg" class="newCars__image" alt="auto6">
+                <a data-lightbox="mygallery" class="newCars__data" data-title="Car 1" href="img/car1.jpg"><img src="img/car1.jpg" class="newCars__image" alt="auto1"></a>
+                <a data-lightbox="mygallery" class="newCars__data" data-title="Car 2" href="img/car2.jpg"><img src="img/car2.jpg" class="newCars__image" alt="auto2"></a>
+                <a data-lightbox="mygallery" class="newCars__data" data-title="Car 3" href="img/car3.jpg"><img src="img/car3.jpg" class="newCars__image" alt="auto3"></a>
+                <a data-lightbox="mygallery" class="newCars__data" data-title="Car 4" href="img/car4.jpg"><img src="img/car4.jpg" class="newCars__image" alt="auto4"></a>
+                <a data-lightbox="mygallery" class="newCars__data" data-title="Car 5" href="img/car5.jpg"><img src="img/car5.jpg" class="newCars__image" alt="auto5"></a>
+                <a data-lightbox="mygallery" class="newCars__data" data-title="Car 6" href="img/car6.jpg"><img src="img/car6.jpg" class="newCars__image" alt="auto6"></a>
             </div>            
         </div>
     </div>
@@ -351,6 +352,7 @@
         </p>
     </footer>
     <i class="goTop fa-solid fa-circle-chevron-up"></i>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/generales.js"></script>
     <script src="js/index.js"></script>
 </body>

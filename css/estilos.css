@@ -50,7 +50,6 @@ html .goTop {
   width: 100%;
   min-height: 80vh;
   position: relative;
-  margin-bottom: 2em;
 }
 
 .headerAbout {
@@ -509,17 +508,20 @@ html .goTop {
   justify-content: center;
   gap: 25px;
 }
-.newCars__image {
+.newCars__data {
   width: 30%;
 }
+.newCars__image {
+  width: 100%;
+}
 @media (max-width: 992px) {
-  .newCars__image {
+  .newCars__data {
     width: 45%;
     margin-bottom: 25px;
   }
 }
 @media (max-width: 768px) {
-  .newCars__image {
+  .newCars__data {
     width: 100%;
   }
 }
