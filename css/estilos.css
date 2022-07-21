@@ -291,6 +291,11 @@ html .goTop {
   margin-bottom: 1.5em;
   width: 45%;
 }
+@media (max-width: 768px) {
+  .main .blog .article {
+    width: 100%;
+  }
+}
 .main .blog .article__image {
   width: 100%;
 }
