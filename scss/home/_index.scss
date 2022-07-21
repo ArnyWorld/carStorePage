@@ -1,0 +1,393 @@
+@use '../base/variables' as var;
+@use '../base/mixin' as mixin;
+@use '../base/colores' as colors;
+
+
+/*Marks Cars*/
+.marksCars{
+    background-color: colors.$color5;
+    .marks {
+        width: 100%;
+        padding: 38px 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        @include mixin.medium{
+            padding: 30px 0;
+            flex-direction: column;
+        }
+        @include mixin.litle{
+            padding: 25px 0;
+        }
+        .textMark{
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include mixin.medium{
+                margin-bottom: 20px;
+            }
+            small{
+                color:colors.$color1;
+            }
+
+            h2{
+                color:colors.$color3;
+                font-family: var.$tipografia1;
+            }
+        }
+        .iconMarks{
+            flex-grow: 3;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            @include mixin.medium{
+                flex-wrap: wrap;
+            }
+            @include mixin.litle{
+                justify-content: space-around;
+            }
+            i {
+                color: colors.$color3;
+                font-size: 3.4rem;
+                transition: all .5s ease;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+/*Icons*/
+
+.leadBackground{
+    background-color:colors.$color7;
+    padding: 55px 0;
+    @include mixin.litle{
+        padding: 25px 0;
+    }
+    .icons{
+        display: flex;   
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include mixin.litle{
+            flex-direction: column;
+        }
+        &__container{
+            display: flex;
+            flex-basis: calc(33% - 35px);
+            margin-bottom: 35px;
+
+            @include mixin.medium{
+                flex-direction: column;
+                align-items: center;
+                flex-basis: calc(50% - 20px);
+            }
+        }
+        &__icon{
+            color:colors.$color1;
+            font-size: 50px; 
+            
+            @include mixin.medium{
+                margin-bottom: 20px;
+            }
+        }
+        &__content{
+            margin-left: 20px;
+        }
+        &__title{
+            @include mixin.title(var.$tipografia1, 1rem, colors.$color4);
+            margin-bottom: 0.4rem;
+        }
+
+        &__text{
+            @include mixin.text(var.$tipografia2, 1rem, colors.$color2);       
+        }
+    }
+}
+
+
+/*newCars*/
+.newCars{
+    padding: 35px 0;
+
+    &__header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    &__title{
+
+        @include mixin.title(var.$tipografia1, 1.8rem, colors.$color4);
+        margin-bottom: 15px;
+    }
+
+    &__description{
+        @include mixin.text(var.$tipografia2, 1.2rem, colors.$color2);
+    }
+
+    &__images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    &__image{
+        width:30%;
+        @include mixin.medium{
+            width: 45%;
+            margin-bottom: 25px;
+        }
+
+        @include mixin.litle{
+            width: 100%;
+        }
+    }
+}
+
+/*Parallax*/
+
+.parallax{
+    background-image:url(../img/contactos-min.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding: 50px 0;
+    @include mixin.litle{
+        padding: 25px 0;
+    }
+    &::before{
+        content:'';
+        width: 100%;
+        height: 100%;
+        background-color: colors.$color8;
+        position: absolute;
+        top: 0;
+    }
+    .contentParallax{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        @include mixin.litle{
+            flex-direction: column;
+        }
+        &__left{
+            width: 45%;
+            @include mixin.litle{
+                width: 100%;
+            }
+        }
+        &__image{
+            width: 100%;
+            @include mixin.litle{
+                display: none;
+            }
+        }
+        &__small{
+            color: colors.$color3;
+            font-size: 16px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        &__title{
+            color: colors.$color3;
+            font-size: 24px;
+            font-family: var.$tipografia1;
+            margin-bottom: 30px;
+        }
+        &__right{
+            width: 45%;
+            padding: 40px 0;
+            @include mixin.litle{
+                width: 100%;
+            }
+        }
+    }
+    .step{
+        margin-bottom: 25px;
+        &__:last-child{
+            margin-bottom: 0px;
+        }
+        &__title{
+            display: flex;
+            align-items: center;
+            span{
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items:center;    
+                background-color: colors.$color1;
+                color: colors.$color3;
+                font-size: 22px;
+                font-weight: 700;
+                border-radius: 50%;
+                margin-right:20px ;
+                @include mixin.title(var.$tipografia1, 1.1rem, colors.$color3);
+            }
+            h4{
+                @include mixin.title(var.$tipografia1, 1.1rem, colors.$color3);
+            }
+        }
+        &__content{
+            p{
+                @include mixin.text(var.$tipografia2, 1rem, colors.$color3);
+    
+            }
+        }
+    }
+    
+}
+
+
+/*testimonials*/
+
+.testimonials{
+    margin-bottom: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mixin.litle{
+        margin-bottom: 30px;
+    }
+    &__title{
+        @include mixin.title(var.$tipografia1, 1.8rem, colors.$color4 );
+    }
+    &__description{
+        @include mixin.text(var.$tipografia2, 1.2rem, colors.$color2);
+    }
+}
+.peopleCards{
+    display: flex;
+    justify-content: space-between;
+    @include mixin.litle{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.peopleCard{
+    width: 28%;
+    border: 1px solid colors.$color9;
+    background-color: colors.$color3;    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mixin.litle{
+        width: 80%;
+        margin-bottom: 35px;
+        padding: 10px;
+    }
+    &__image{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        object-position: top center;
+        border-radius: 50%;
+        position: relative;
+        top: -50px;
+        @include mixin.litle{
+            top: 0px;
+        }
+    }
+    &__content{
+        position: relative;
+        top: -50px;
+        padding: 15px;
+        text-align: center;
+        @include mixin.litle{
+            top: 0px;
+        }
+    }
+    &__title{
+        margin-bottom: 15px;
+        @include mixin.title(var.$tipografia1, 1.3rem, colors.$color4 );        
+    }
+    &__description{
+        color:colors.$color2;
+        @include mixin.text(var.$tipografia2, 1rem, colors.$color2);
+    }
+}
+    
+/*Subscription*/
+.subscriptionContainer{
+    background-color: colors.$color1;
+    padding: 25px 0;
+    width: 100%;
+    .subscription{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &__title{
+            color: colors.$color3;
+            font-size: 1.3rem;
+            font-family: var.$tipografia1;
+            width: 35%;
+
+            @include mixin.medium{
+                width: 47%;
+            }
+            @include mixin.litle{
+                width: 100%;
+                margin-bottom: 25px;
+            }
+        }
+        .formSubscription{
+            width: 50%;
+            @include mixin.medium{
+                width: 47%;
+            }
+            @include mixin.litle{
+                width: 100%;
+            }
+            .form{
+                display: flex;
+                flex-wrap: wrap;
+                @include mixin.litle{
+                    flex-direction: column;
+                }
+                &__email{
+                    border: none;
+                    background-color: transparent;
+                    color: colors.$color3;
+                    font-size: 20px;
+                    border-bottom: 2px solid colors.$color3;    
+                    flex-grow: 3;
+                    @include mixin.medium{
+                        margin-bottom: 15px;
+                    }
+                    &::placeholder{
+                        color: colors.$color3;
+                        font-weight: 700;     
+                    }
+                    &:focus{
+                        outline:none
+                    }
+                }     
+                &__submit{
+                    padding: 13px 40px;
+                    border: 1px solid colors.$color3;
+                    background-color: transparent;
+                    color:colors.$color3;
+                    font-weight: 700;
+                    border-radius: 5px;
+                    font-family: var.$tipografia1;
+                    margin-left: 20px;
+                    cursor: pointer;
+                    flex-grow: 1;
+                    @include mixin.medium{
+                        margin-bottom: 0;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
