@@ -1,0 +1,35 @@
+@use '../base/variables' as var;
+@use '../base/mixin' as mixin;
+@use '../base/colores' as colors;
+
+.main{
+    .listing{
+        margin-bottom: 2em;
+        &__title{
+            @include mixin.title(var.$tipografia1, 1.5rem, colors.$color1);
+            margin-bottom: 1.5em; 
+        }
+        .gallery{
+            display: flex;
+            gap: 2em;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .car{
+                width: 400px;
+                &__image{
+                    width: 100%;
+                    margin-bottom: 1em;
+                    cursor: pointer;
+                }
+                &__title{
+                    @include mixin.title(var.$tipografia1, 1.1rem, colors.$color4);
+                    margin-bottom: 0;
+                }
+                &__model{
+                    @include mixin.text(var.$tipografia2, 1rem, colors.$color2);
+                }
+            }
+        }
+    }
+}
