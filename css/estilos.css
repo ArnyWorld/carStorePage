@@ -84,7 +84,7 @@ html .goTop {
   height: 85vh;
 }
 .headerHome {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../../img/headerHome.jpg");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/headerHome.jpg");
   background-size: cover;
   background-position: center;
   height: 85vh;
@@ -139,7 +139,7 @@ html .goTop {
   height: 85vh;
 }
 .bodyShopping {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../../img/background.jpg");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/background.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -1201,7 +1201,7 @@ main .shop__text {
 }
 main .parallaxShop {
   margin-bottom: 2em;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../../img/mechanic.jpg");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/mechanic.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1627,7 +1627,7 @@ main .subscribe .subscribeContent .subscribeContent__form .formButton {
 
 footer {
   width: 100%;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../../img/separador.jpg");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/separador.jpg");
   background-size: cover;
   background-position: center;
 }
