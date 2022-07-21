@@ -275,6 +275,49 @@ html .goTop {
   display: none;
 }
 
+.main .blog__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: #ff3737;
+  margin-bottom: 1.2rem;
+  margin-bottom: 1.5em;
+}
+.main .blog__articles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main .blog .article {
+  margin-bottom: 1.5em;
+  width: 45%;
+}
+.main .blog .article__image {
+  width: 100%;
+}
+.main .blog .article__content {
+  padding: 1.2em;
+}
+.main .blog .article__date {
+  color: #797979;
+  font-family: "Source Sans Pro", helvetica;
+  font-size: 1rem;
+}
+.main .blog .article__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.main .blog .article__text {
+  font-family: "Source Sans Pro", helvetica;
+  font-size: 1rem;
+  color: #797979;
+  text-align: justify;
+  line-height: 1.6;
+}
+
 footer {
   width: 100%;
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../../img/separador.jpg");
