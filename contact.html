@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About- CarStore</title>
+    <title>contact - carStore</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header class="header headerAbout">
-        
+    <header class="header headerContact">
     </header>
     <div class="menuMovil">
         <div class="menuMovil__logo">
@@ -102,98 +101,62 @@
         </div>
     </nav>
     <main class="main">
-        <section class="leadBackground about">
-            <div class="container">
-            <h2 class="about__title">About</h2>
-                    <div class="iconsAbout">
-                        <div class="iconsAbout__container">
-                            <i class="fas fa-hand-holding-usd iconsAbout__icon"></i>
-                                <h3 class="iconsAbout__title">Economic</h3>
-                                <p class="iconsAbout__text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsa, ullam suscipit, impedit dolore tenetur asperiores rem aspernatur ad incidunt consectetur dolorum. Molestiae quasi, deserunt asperiores voluptatibus tenetur culpa nam?
-                                </p>
-                            
+        <section class="container contact">
+            <h2 class="contact__title">Contact</h2>
+            <div class="contact__container">
+                <div class="formContainer">
+                    <p class="formContainer__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quisquam perspiciatis nesciunt quae doloremque asperiores autem ratione, recusandae optio eligendi necessitatibus minima sapiente vero incidunt. Sapiente pariatur corrupti quia aperiam.
+                    </p>
+                    <form action="" class="formContainer__form">
+                        <div class="formContainer__formGroup">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="formContainer__name">
                         </div>
-                        <div class="iconsAbout__container">
-                            <i class="fas fa-tools iconsAbout__icon"></i>
-                                <h3 class="iconsAbout__title">Support</h3>
-                                <p class="iconsAbout__text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsa, ullam suscipit, impedit dolore tenetur asperiores rem aspernatur ad incidunt consectetur dolorum. Molestiae quasi, deserunt asperiores voluptatibus tenetur culpa nam?
-                                </p>
+                        <div class="formContainer__formGroup">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="formContainer__email">
                         </div>
-                        <div class="iconsAbout__container">
-                            <i class="far fa-handshake iconsAbout__icon"></i>
-                                <h3 class="iconsAbout__title">Trust</h3>
-                                <p class="iconsAbout__text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsa, ullam suscipit, impedit dolore tenetur asperiores rem aspernatur ad incidunt consectetur dolorum. Molestiae quasi, deserunt asperiores voluptatibus tenetur culpa nam?
-                                </p>
-                        </div>                        
-                    </div>
+                        <div class="formContainer__formGroup">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" class="formContainer__message" cols="30" rows="10"></textarea>
+                        </div>
+                        <input type="submit" class="formContainer__submit" value="Send Message">
+                    </form>                    
                 </div>
+                <img src="img/contact-min.png" class="contact__image" alt="Contacto">
+            </div>
+        
         </section>
-        <div class="container firstMarket">
-            <img src="img/carTransparent-min.png" class="firstMarket__image" alt="">
-            <section class="firstMarket__content">
-                <h2 class="firstMarket__title">The first in the car market</h2>
-                <p class="firstMarket__text">Lorem ipsum dolor sit amet consectetur. Provident tempore dolor aliquid officiis, reiciendis at quas culpa totam doloremque incidunt error a nostrum, unde asperiores! Ipsam debitis laborum necessitatibus a.
-                Saepe maxime impedit dolorum molestias rem asperiores voluptatibus, magni, nostrum necessitatibus delectus vel corporis inventore deleniti expedita ea debitis obcaecati quae! Natus.</p>
-                <div class="details">
-                    <div class="details__car">
-                        <i class="fa-solid fa-car details__icon"></i>
-                        <div class="details__left">
-                            <h4 class="details__title">Car Agency</h4>
-                            <p class="details__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatem voluptates.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="details__car">
-                        <i class="fa-solid fa-1 details__icon"></i>
-                        <div class="details__right">
-                            <h4 class="details__title">First in the market</h4>
-                            <p class="details__text">
-                                Nostrum voluptatem voluptates laudantium eveniet accusamus placeat optio pariatur.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="firstMarket__button">Get a quote</a>
-            </section>
-        </div>
 
-        <section class="container ourTeam">
-            <h2 class="ourTeam__title">Our Team Member</h2>
-            <div class="teams">
-                <div class="team">
-                    <img src="img/employee3-min.png" class="team__image" alt="CEO">
-                    <div class="team__details">
-                        <h3 class="team__load">CEO</h3>
-                        <p class="team__name">Monica Casas</p>
-                    </div>
+        <div class="leadBackground">
+            <div class="container iconsContainer">
+                <div class="iconsContainer__card">
+                    <i class="fa-solid fa-location-dot iconsContainer__icon"></i>
+                    <h3 class="iconsContainer__title">Ubication</h3>
+                    <p class="iconsContainer__description">
+                        2972 Westheimer Rd. Santa Ana, Illinois 85486 <br>
+                        4517 Washington Ave. Manchester, Kentucky 39495
+                    </p>
                 </div>
-                <div class="team">
-                    <img src="img/employee1-min.png" class="team__image" alt="MANAGER">
-                    <div class="team__details">
-                        <h3 class="team__load">MANAGER</h3>
-                        <p class="team__name">Carlos Ramirez</p>
-                    </div>
+                <div class="iconsContainer__card">
+                    <i class="fa-solid fa-phone iconsContainer__icon"></i>
+                    <h3 class="iconsContainer__title">Phone</h3>
+                    <p class="iconsContainer__description">
+                        (219) 555-0114 <br>
+                        Mon-Sat 9:00am-5:00pm
+                    </p>
                 </div>
-                <div class="team">
-                    <img src="img/employee4-min.png" class="team__image" alt="CEO">
-                    <div class="team__details">
-                        <h3 class="team__load">CEO</h3>
-                        <p class="team__name">Karen Paz</p>
-                    </div>
-                </div>
-                <div class="team">
-                    <img src="img/employee2-min.png" class="team__image" alt="CEO">
-                    <div class="team__details">
-                        <h3 class="team__load">MANAGER</h3>
-                        <p class="team__name">Paul Vex</p>
-                    </div>
+                <div class="iconsContainer__card">
+                    <i class="fa-regular fa-envelope iconsContainer__icon"></i>
+                    <h3 class="iconsContainer__title">Email</h3>
+                    <p class="iconsContainer__description">
+                        carStore@support.com   <br>
+                        24 X 7 online support
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
 
     </main>
     <footer>

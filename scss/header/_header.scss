@@ -7,7 +7,6 @@
     width: 100%;
     min-height:80vh ;
     position: relative;
-    
 }
 
 .headerAbout{
@@ -45,6 +44,13 @@
             @include mixin.button(colors.$color4, colors.$color3, none);
         }
     }
+}
+.headerContact{
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/headerPorshe.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    margin-bottom: 2em;
 
 }
 
@@ -53,7 +59,6 @@
     min-height:100vh;
     margin-bottom: 0;
     background-attachment: fixed;
-
 }
 
 .menuMovil{
